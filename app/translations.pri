@@ -3,7 +3,7 @@ defineReplace(prependAll) {
     return($$result)
 }
 
-LRELEASE = lrelease
+LRELEASE = $$[QT_EXTERNAL_HOST_BINS]/lrelease
 TRANSLATIONS = $$prependAll(LANGUAGES, $$PWD/translations/$${TARGET}_,.ts)
 
 qm.depends = $${TRANSLATIONS}
